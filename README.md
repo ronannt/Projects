@@ -1,6 +1,6 @@
-# DMS (Document Management System) Project in Python with SQL
+# DMS (Document Management System) Project in Python with MySQL
 
-This project is a Document Management System (DMS) developed in Python, utilizing an SQL database. The application features a graphical interface built with PyQt5, robust error handling, and filtering functionalities to facilitate the management and retrieval of documents.
+This project is a Document Management System (DMS) developed in Python 3, utilizing an MySQL database. The application features a graphical interface built with PyQt5, robust error handling, and filtering functionalities to facilitate the management and retrieval of documents.
 
 ## Features
 
@@ -14,7 +14,6 @@ This project is a Document Management System (DMS) developed in Python, utilizin
 
 ## Technologies Used
 
-- Python 3.x
-- SQLite/MySQL/PostgreSQL (depending on your choice)
-- PyQt5 (for the graphical interface)
-- SQLAlchemy (for database management)
+- Python 3.12.8
+- MySQL
+- PyQt5
