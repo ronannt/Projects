@@ -5,9 +5,11 @@ This project is a Document Management System (DMS) developed in Python 3, utiliz
 ## Features
 
 - **Create**: Add new documents to the database.
+- 
 ![image](https://github.com/user-attachments/assets/2c8e94bf-7087-48b5-92d5-6f886abf10b2)
 
 - **Read**: View existing documents with filtering options.
+  
 ![image](https://github.com/user-attachments/assets/1783228b-c56e-4a87-99af-0df2fca06c31)
 
 - **Update**: Modify existing document details.
