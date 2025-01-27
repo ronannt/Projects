@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="close_img">
+    <file>imagens/cil-x.png</file>
+  </qresource>
+  <qresource prefix="north">
+    <file>imagens/icon-north.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,1782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1162</width>
+    <height>688</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Easy Project</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="file_rcs.qrc">
+    <normaloff>:/north/imagens/icon-north.png</normaloff>:/north/imagens/icon-north.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(200, 200, 200);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="top_bar">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>34</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(11, 11, 11);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>3</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>3</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame_erro">
+         <property name="maximumSize">
+          <size>
+           <width>550</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 84, 84);
+border-radius: 10px;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>5</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>5</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_erro">
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Erro</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bt_cl_popup">
+            <property name="maximumSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	border-radius: 5px;
+	background-image: url(:/close_img/imagens/cil-x.png);
+	background-position: center;
+	background-color: rgb(190, 0, 0);
+}
+QPushButton:hover{
+	color: rgb(255, 255, 255);
+	background-color: rgb(165, 0, 0);
+}
+QPushButton:pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(190, 0, 0);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_home">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QFrame" name="frame_procuracao">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>666</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(200, 200, 200);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+};
+background-color: rgb(83, 83, 83);
+border-radius: 10px;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QLabel" name="label_procuracao">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="text">
+             <string>Procuração</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linetituc">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(200, 200, 200);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="frame">
+             <bool>true</bool>
+            </property>
+            <property name="placeholderText">
+             <string>Titular:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineempresa">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="placeholderText">
+             <string>Empresa:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linecnpj">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="placeholderText">
+             <string>CNPJ:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineuc">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(200, 200, 200);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>UC:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linecnc">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(200, 200, 200);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>Concessionária:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linerg">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>RG:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linecpfcnpj">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>CPF:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linerua">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>Rua:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linenum">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>Numero:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linecomp">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>Complemento:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linebairro">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>Bairro:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linecid">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>Cidade/Estado:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linecep">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>CEP:</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_dados_anel">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>666</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(200, 200, 200);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+};
+background-color: rgb(83, 83, 83);
+border-radius: 10px;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QLabel" name="label_dados_anel">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="text">
+             <string>Dados Aneel</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linedisjuntor">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="frame">
+             <bool>true</bool>
+            </property>
+            <property name="placeholderText">
+             <string>Disjuntor:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linecla">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>Classe:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineqtdmod">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>Quantidade modulos:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linefabmod">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>Fabricante modulos:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linemodmod">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>Modelo modulos:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineareaarranjo">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>Area arranjo:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineqtdinversor">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>Quantidade inversor:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linefabinversor">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>Fabricante inversor:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linemodinversor">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>Modelo inversor:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linesomamod">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>Soma potencia modulos:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linesomainversor">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>Soma potencia inversor:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linedataprev">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>Data previsao:</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_form10k">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>666</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(200, 200, 200);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}
+QPushButton {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(254, 14, 15);
+	color: rgb(30, 30, 30);
+	padding: 8px;
+}
+QPushButton:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QPushButton:pressed {
+	border: 2px solid rgb(45, 45, 45);
+	color: rgb(30, 30, 30);
+}
+QListWidget {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QListWidget:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QListWidget:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+};
+background-color: rgb(83, 83, 83);
+border-radius: 10px;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="text">
+             <string>Formulario</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linelttd">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="frame">
+             <bool>true</bool>
+            </property>
+            <property name="placeholderText">
+             <string>Latitude:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linelgtd">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>Longitude:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linecargainsta">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>Carga instalada:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linecargainstagera">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>Carga gerada:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linetensao">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>Tensão:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="listpot">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QListWidget {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QListWidget:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QListWidget:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>KIT 2.2</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>KIT 2.75</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>KIT 3.3</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>KIT 3.85</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>KIT 4.4</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>KIT 5.5</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>KIT 6.05</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>KIT 6.60</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>KIT 7.7</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>KIT 7.75</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>KIT 8.8</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>KIT 8.25</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>KIT 9.9</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>KIT 9.35</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>KIT 10.45</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>KIT 11</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="listpot2">
+            <item>
+             <property name="text">
+              <string>KIT 11</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bt_mono">
+            <property name="text">
+             <string>Monofásico</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bt_bi">
+            <property name="text">
+             <string>Bifásico</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bt_tri">
+            <property name="text">
+             <string>Trifásico</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="inv70a">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QRadioButton:indicator {
+	border: 3px solid rgb(100, 100, 100);
+	border-radius: 5px;
+	width: 10px;
+	height: 10px;
+	background-color: rgb(135, 135, 135);
+}
+QRadioButton:indicator:checked {
+	border: 3px solid rgb(254, 14, 15);
+	background-color: rgb(254, 14, 15);	
+}</string>
+            </property>
+            <property name="text">
+             <string>70A</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="inv63a">
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QRadioButton:indicator {
+	border: 3px solid rgb(100, 100, 100);
+	border-radius: 5px;
+	width: 10px;
+	height: 10px;
+	background-color: rgb(135, 135, 135);
+}
+QRadioButton:indicator:checked {
+	border: 3px solid rgb(254, 14, 15);
+	background-color: rgb(254, 14, 15);	
+}</string>
+            </property>
+            <property name="text">
+             <string>63A</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="inv100a">
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QRadioButton:indicator {
+	border: 3px solid rgb(100, 100, 100);
+	border-radius: 5px;
+	width: 10px;
+	height: 10px;
+	background-color: rgb(135, 135, 135);
+}
+QRadioButton:indicator:checked {
+	border: 3px solid rgb(254, 14, 15);
+	background-color: rgb(254, 14, 15);	
+}</string>
+            </property>
+            <property name="text">
+             <string>100A</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_memorial">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>666</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(200, 200, 200);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+};
+background-color: rgb(83, 83, 83);
+border-radius: 10px;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="text">
+             <string>Memorial</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linetpatvd">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="frame">
+             <bool>true</bool>
+            </property>
+            <property name="placeholderText">
+             <string>Tipo de atividade:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linedisjuntor2">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="frame">
+             <bool>true</bool>
+            </property>
+            <property name="placeholderText">
+             <string>Disjuntor 2:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineptnmod">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="frame">
+             <bool>true</bool>
+            </property>
+            <property name="placeholderText">
+             <string>Potencia nominal modulo:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineqtdarranjo">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="frame">
+             <bool>true</bool>
+            </property>
+            <property name="placeholderText">
+             <string>Quantidade de arranjos:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineseriearranjo">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="frame">
+             <bool>true</bool>
+            </property>
+            <property name="placeholderText">
+             <string>Serie de arranjos:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineptninversor">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="frame">
+             <bool>true</bool>
+            </property>
+            <property name="placeholderText">
+             <string>Potencia nominal inversor:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineqtdentinversor">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="frame">
+             <bool>true</bool>
+            </property>
+            <property name="placeholderText">
+             <string>Quantidade entradas inversor:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineespcc">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="frame">
+             <bool>true</bool>
+            </property>
+            <property name="placeholderText">
+             <string>Espessura cabo CC:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineespca">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(30, 30, 30);
+	color: rgb(150, 150, 150);
+	padding: 8px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(254, 14, 15);
+	color: rgb(200, 200, 200);
+}</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="frame">
+             <bool>true</bool>
+            </property>
+            <property name="placeholderText">
+             <string>Espessura cabo CA:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="okbt">
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	background-color: rgb(254, 14, 15);
+	color: rgb(30, 30, 30);
+	padding: 8px;
+}
+QPushButton:hover {
+	border: 2px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+}
+QPushButton:pressed {
+	border: 2px solid rgb(45, 45, 45);
+	color: rgb(30, 30, 30);
+}</string>
+            </property>
+            <property name="text">
+             <string>OK!</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="bottom">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>35</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(21, 21, 21);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_credits">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>© 2023 Created by: Gualter Ronan, Equipe North TC.</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="file_rcs.qrc"/>
+ </resources>
+ <connections/>
+</ui>
