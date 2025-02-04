@@ -35,12 +35,10 @@ class Primary_Functions:
                 Primary_Functions.Error(Primary_Functions, error, login)
                 return
 
-    def ClosePopUp(self, frame):
-        frame.frame_erro.hide()
 
     def Update(self, frame):
         try:
-            q = ("SELECT * FROM dms_database")
+            q = ("SELECT * FROM `crud_database_1`.`dms_database` WHERE 1;")
             self.cursor.execute(q)
             result = self.cursor.fetchall()
             frame.table.setRowCount(0)
@@ -159,6 +157,99 @@ class Primary_Functions:
         except mysql.connector.Error as error:
                 Primary_Functions.Error(Primary_Functions, error, delete)
                 return
+    def ShowUpdate(self, table, frame, home):
+        selected_items = table.selectedItems()
+        if selected_items:
+            for item in selected_items:
+                id = item.text()
+                try:
+                    q = (f"SELECT * FROM dms_database WHERE `dms_database`.`id` = {id};")
+                    self.cursor.execute(q)
+                    if self.cursor.fetchall():
+                        frame.show()
+                    else:
+                        home.label_erro.setText("No ID selected!")
+                        home.frame_erro.show()
+                except mysql.connector.Error as error:
+                    return
+        else:
+            home.label_erro.setText("No ID selected!")
+            home.frame_erro.show()
+
+    def UpdateData(self,table, group, st1, st2, st3, frame, home):
+        selected_items = table.selectedItems()
+        for item in selected_items:
+            id = item.text()
+
+        if st1.isChecked():
+            status = ('Started')
+            ck = 1
+        elif st2.isChecked():
+            status = ('Analyzing')
+            ck = 1
+        elif st3.isChecked():
+            status = ('Finished')
+            ck = 1
+        else:
+            ck = 2
+        
+        group_items = group.selectedItems()
+        group_texts = [item.text() for item in group_items]
+
+        try:
+            groupf = group_texts[0]
+            gp = 1
+        except IndexError:
+            gp = 2
+    
+        if gp == 1 and ck == 2:
+            try:
+                q1 = (f"UPDATE `dms_database` SET `group` = '{groupf}' WHERE `id` = {id};")
+                self.cursor.execute(q1)
+                self.conn.commit()
+                Primary_Functions.Update(Primary_Functions, home)
+            except mysql.connector.Error as error:
+                    Primary_Functions.Error(Primary_Functions, error, frame)
+        elif gp == 2 and ck == 1:
+            try:
+                q2 = (f"UPDATE `dms_database` SET `status` = '{status}' WHERE `id` = {id};")
+                self.cursor.execute(q2)
+                self.conn.commit()
+                Primary_Functions.Update(Primary_Functions, home)
+            except mysql.connector.Error as error:
+                    Primary_Functions.Error(Primary_Functions, error, frame)
+        elif gp == 1 and ck == 1:
+            try:
+                q1 = (f"UPDATE `dms_database` SET `group` = '{groupf}' WHERE `id` = {id};")
+                q2 = (f"UPDATE `dms_database` SET `status` = '{status}' WHERE `id` = {id};")
+                self.cursor.execute(q1)
+                self.conn.commit()
+                self.cursor.execute(q2)
+                self.conn.commit()
+                Primary_Functions.Update(Primary_Functions, home)
+            except mysql.connector.Error as error:
+                    Primary_Functions.Error(Primary_Functions, error, frame)
+        else:
+            return
+
+        frame.list_group.clearSelection()
+        if ck == 1:
+            st1.setAutoExclusive(False)
+            st1.setChecked(False)
+            st1.setAutoExclusive(True)
+        elif ck == 2:
+            st2.setAutoExclusive(False)
+            st2.setChecked(False)
+            st2.setAutoExclusive(True)
+        elif ck ==31:
+            st3.setAutoExclusive(False)
+            st3.setChecked(False)
+            st3.setAutoExclusive(True)
+        frame.frame_erro.hide()
+        frame.close()
+    
+    def ClosePopUp(self, frame):
+        frame.frame_erro.hide()
 
     def ShowFrame(self, frame):
         frame.show()

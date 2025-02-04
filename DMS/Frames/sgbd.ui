@@ -347,6 +347,18 @@ QPushButton:pressed {
                  </widget>
                 </item>
                 <item>
+                 <widget class="QPushButton" name="bt_update">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Update</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
                  <widget class="QLabel" name="label_2">
                   <property name="maximumSize">
                    <size>

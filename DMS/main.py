@@ -9,15 +9,17 @@ myDir = os.getcwd()
 sys.path.append(myDir)
 app = QtWidgets.QApplication([])
 
-login = uic.loadUi("Frames\\login.ui")
-home = uic.loadUi("Frames\\sgbd.ui")
-add = uic.loadUi("Frames\\add.ui")
-delete = uic.loadUi("Frames\\del.ui")
+login = uic.loadUi("DMS\\Frames\\login.ui")
+home = uic.loadUi("DMS\\Frames\\sgbd.ui")
+add = uic.loadUi("DMS\\Frames\\add.ui")
+delete = uic.loadUi("DMS\\Frames\\del.ui")
+update = uic.loadUi("DMS\\Frames\\update.ui")
 
 login.setWindowIcon(QtGui.QIcon('Icons\\login.png'))
 home.setWindowIcon(QtGui.QIcon('Icons\\login.png'))
 add.setWindowIcon(QtGui.QIcon('Icons\\login.png'))
 delete.setWindowIcon(QtGui.QIcon('Icons\\login.png'))
+update.setWindowIcon(QtGui.QIcon('Icons\\login.png'))
 
 login.frame_erro.hide()
 login.bt_cl_popup.clicked.connect(lambda: Primary_Functions.ClosePopUp(Primary_Functions, login))
@@ -30,6 +32,7 @@ home.bt_refresh.clicked.connect(lambda: Primary_Functions.Update(Primary_Functio
 home.bt_filter.clicked.connect(lambda: Primary_Functions.Filter(Primary_Functions, home, home.status_box.currentText()))
 home.bt_exit.clicked.connect(lambda: Primary_Functions.Close(Primary_Functions, home))
 home.bt_delete.clicked.connect(lambda: Primary_Functions.ShowFrame(Primary_Functions, delete))
+home.bt_update.clicked.connect(lambda: Primary_Functions.ShowUpdate(Primary_Functions, home.table, update, home))
 
 add.frame_erro.hide()
 add.bt_cl_popup.clicked.connect(lambda: Primary_Functions.ClosePopUp(Primary_Functions, add))
@@ -38,6 +41,10 @@ add.bt_add.clicked.connect(lambda: Primary_Functions.Create(Primary_Functions, a
 delete.frame_erro.hide()
 delete.bt_cl_popup.clicked.connect(lambda: Primary_Functions.ClosePopUp(Primary_Functions, delete))
 delete.bt_del.clicked.connect(lambda: Primary_Functions.Delete(Primary_Functions, delete.line_id.text(), delete, home))
+
+update.frame_erro.hide()
+update.bt_cl_popup.clicked.connect(lambda: Primary_Functions.ClosePopUp(Primary_Functions, update))
+update.bt_add.clicked.connect(lambda: Primary_Functions.UpdateData(Primary_Functions, home.table, update.list_group, update.ck_started, update.ck_analyzing, update.ck_finished, update, home))
 
 login.show()
 app.exec_()
