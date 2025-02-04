@@ -13,6 +13,8 @@ This project is a Document Management System (DMS) developed in Python 3, utiliz
 ![image](https://github.com/user-attachments/assets/1783228b-c56e-4a87-99af-0df2fca06c31)
 
 - **Update**: Modify existing document details.
+- 
+- ![image](https://github.com/user-attachments/assets/a2594caa-6c0e-4315-ad55-02920d6c37dc)
   
 - **Delete**: Remove documents from the database.
   
