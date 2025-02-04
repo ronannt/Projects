@@ -10,7 +10,7 @@ This project is a Document Management System (DMS) developed in Python 3, utiliz
 
 - **Read**: View existing documents with filtering options.
   
-![image](https://github.com/user-attachments/assets/88af8d8b-66c8-4c58-8bf6-c87f10ec1d61)
+![image](https://github.com/user-attachments/assets/0582ee4c-7ee2-41a3-ad0b-79837541ac25)
 
 - **Update**: Modify existing document details.
   
