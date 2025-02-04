@@ -10,7 +10,7 @@ This project is a Document Management System (DMS) developed in Python 3, utiliz
 
 - **Read**: View existing documents with filtering options.
   
-![image](https://github.com/user-attachments/assets/1783228b-c56e-4a87-99af-0df2fca06c31)
+![image](https://github.com/user-attachments/assets/88af8d8b-66c8-4c58-8bf6-c87f10ec1d61)
 
 - **Update**: Modify existing document details.
   
@@ -26,7 +26,7 @@ This project is a Document Management System (DMS) developed in Python 3, utiliz
 
 - **Error Handling**: Informative error messages to enhance user experience.
   
-![image](https://github.com/user-attachments/assets/45df1a85-f5da-4932-b8bd-2ffa3de83479)
+![image](https://github.com/user-attachments/assets/51e36bbd-81e5-47a3-a16f-91f824555a58)
 
 - **Graphical Interface**: User-friendly interface developed with PyQt5.
   
