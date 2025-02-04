@@ -14,7 +14,7 @@ This project is a Document Management System (DMS) developed in Python 3, utiliz
 
 - **Update**: Modify existing document details.
   
-- ![image](https://github.com/user-attachments/assets/a2594caa-6c0e-4315-ad55-02920d6c37dc)
+![image](https://github.com/user-attachments/assets/a2594caa-6c0e-4315-ad55-02920d6c37dc)
   
 - **Delete**: Remove documents from the database.
   
@@ -22,7 +22,7 @@ This project is a Document Management System (DMS) developed in Python 3, utiliz
 
 - **Filters**: Apply filters to simplify searching and viewing documents.
   
-![image](https://github.com/user-attachments/assets/330bbc3b-3a05-4b36-a7b3-664f02e9ff9e)
+![image](https://github.com/user-attachments/assets/6608347d-0037-4088-b0b4-d943e1abf140)
 
 - **Error Handling**: Informative error messages to enhance user experience.
   
