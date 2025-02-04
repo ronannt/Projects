@@ -13,7 +13,7 @@ This project is a Document Management System (DMS) developed in Python 3, utiliz
 ![image](https://github.com/user-attachments/assets/1783228b-c56e-4a87-99af-0df2fca06c31)
 
 - **Update**: Modify existing document details.
-- 
+  
 - ![image](https://github.com/user-attachments/assets/a2594caa-6c0e-4315-ad55-02920d6c37dc)
   
 - **Delete**: Remove documents from the database.
@@ -26,11 +26,11 @@ This project is a Document Management System (DMS) developed in Python 3, utiliz
 
 - **Error Handling**: Informative error messages to enhance user experience.
   
-![image](https://github.com/user-attachments/assets/b1b61def-adde-4a06-810a-1678f88d0bd3)
+![image](https://github.com/user-attachments/assets/45df1a85-f5da-4932-b8bd-2ffa3de83479)
 
 - **Graphical Interface**: User-friendly interface developed with PyQt5.
   
-![image](https://github.com/user-attachments/assets/c62dd462-9340-470f-acb4-cd2431a28eff)
+![image](https://github.com/user-attachments/assets/12f612a5-c2f8-461b-9d3d-73108154e5ac)
 
 ## Technologies Used
 
